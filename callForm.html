@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>call form</title>
+
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" property="stylesheet"/>
+    <link href="css/callForm.css" rel="stylesheet" property="stylesheet"/>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/callForm.js"></script>
+</head>
+<body>
+    <div class="call__btn" href="#call__form">Call me</div>
+    <form action="call.php" id="call__form" class="hidden">
+    <h2>Обратный звонок</h2>
+
+    <p>Наш менеджер свяжется с вами в ближайшее время</p>
+
+    <div class="form__group"><input type="text" name="name" required placeholder="Имя"></div>
+    <div class="form__group"><input type="tel" name="phone" required placeholder="Телефон" maxlength="18"></div>
+    <div class="form__group"><input type="submit" value="Позвоните мне"></div>
+</form>
+</body>
+</html>
